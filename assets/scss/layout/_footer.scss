@@ -1,0 +1,17 @@
+.wrap {
+  &--footer {
+    background-color: $black;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-top: 55px;
+  }
+}
+
+.footer-site {
+  padding-bottom: 10px;
+
+  &__mobile {
+    float: right;
+  }
+}

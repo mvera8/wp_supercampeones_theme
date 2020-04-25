@@ -1,0 +1,50 @@
+//
+// Tipography
+// ------------------------------------
+.h1,
+.h2,
+.h3,
+.h4,
+h1,
+h2,
+h3,
+h4 {
+  @include montserratBlack();
+}
+
+.h1,
+h1 {
+  font-size: 9rem;
+}
+
+.h2,
+h2 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+
+  span {
+    color: $primary-color;
+  }
+}
+
+.h3,
+h3 {
+  font-size: 2.8rem;
+}
+
+.h4,
+h4 {
+  font-size: 2.1rem;
+}
+
+p {
+  line-height: 1.37;
+
+  &.subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+.light {
+  font-weight: 300;
+}

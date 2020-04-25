@@ -1,0 +1,12 @@
+.team {
+  &__badge {
+    margin: 1rem auto;
+    width: 100px;
+  }
+
+  &__result {
+    @include montserratBlack();
+
+    font-size: 4rem;
+  }
+}
