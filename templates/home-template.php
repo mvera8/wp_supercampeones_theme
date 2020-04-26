@@ -12,9 +12,10 @@ get_template_part( 'template-parts/carousel' );
 get_template_part( 'template-parts/home/blocks-top' );
 while ( have_posts() ) :
 	the_post();
-	echo '<div class="bg--black">';
+	echo '<div class="bg--secondary">';
 		get_template_part( 'template-parts/page-content', get_post_format() );
 	echo '</div>';
 endwhile;
 get_template_part( 'template-parts/home/blocks-bottom' );
+get_template_part( 'template-parts/home/news' );
 get_footer();

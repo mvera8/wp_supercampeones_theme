@@ -25,13 +25,25 @@ function wp_supercampeones_theme_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer', 'WP_Supercampeones_Theme' ),
-			'id'            => 'footer-1',
-			'description'   => esc_html__( 'Add widgets for footer here.', 'WP_Supercampeones_Theme' ),
+			'name'          => esc_html__( 'Logos', 'WP_Supercampeones_Theme' ),
+			'id'            => 'logos-1',
+			'description'   => esc_html__( 'Add images of logos here.', 'WP_Supercampeones_Theme' ),
 			'before_widget' => '<div class="col text-center logos__item">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<span class="d-none">',
 			'after_title'   => '</span>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer', 'WP_Supercampeones_Theme' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'Add widgets for footer here.', 'WP_Supercampeones_Theme' ),
+			'before_widget' => '<div class="col-md-auto footer-site__widget">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="color--primary footer-site__title">',
+			'after_title'   => '</h3>',
 		)
 	);
 }
