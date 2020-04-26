@@ -9,6 +9,11 @@
     color: $white !important;
   }
 
+  &--important {
+    background-color: $third-color !important;
+    color: $white !important;
+  }
+
   &--black-gradient {
     background: rgba(0, 0, 0, 1);
     background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(46, 46, 46, 1) 100%);

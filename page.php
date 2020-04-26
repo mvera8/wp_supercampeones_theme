@@ -12,8 +12,9 @@
  * @package WP_Supercampeones_Theme
  */
 
-get_header(); ?>
-
+get_header();
+get_template_part( 'template-parts/carousel' );
+?>
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<main id="post-<?php the_ID() ?>" class="<?php post_class() ?>">

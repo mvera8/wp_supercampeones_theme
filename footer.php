@@ -12,8 +12,12 @@
 ?>
 
 	<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
-		<section id="logos" class="bg--blue py-5">
-			<?php dynamic_sidebar( 'footer-1' ); ?>
+		<section class="logos bg--blue py-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<?php dynamic_sidebar( 'footer-1' ); ?>
+				</div>
+			</div>
 		</section>
 	<?php } ?>
 

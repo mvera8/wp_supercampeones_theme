@@ -8,7 +8,7 @@
  */
 
 get_header();
-get_template_part( 'template-parts/home/carousel' );
+get_template_part( 'template-parts/carousel' );
 get_template_part( 'template-parts/home/blocks-top' );
 while ( have_posts() ) :
 	the_post();
@@ -16,4 +16,5 @@ while ( have_posts() ) :
 		get_template_part( 'template-parts/page-content', get_post_format() );
 	echo '</div>';
 endwhile;
+get_template_part( 'template-parts/home/blocks-bottom' );
 get_footer();
