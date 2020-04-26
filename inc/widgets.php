@@ -28,7 +28,7 @@ function wp_supercampeones_theme_widgets_init() {
 			'name'          => esc_html__( 'Footer', 'WP_Supercampeones_Theme' ),
 			'id'            => 'footer-1',
 			'description'   => esc_html__( 'Add widgets for footer here.', 'WP_Supercampeones_Theme' ),
-			'before_widget' => '<div class="site-footer__widget">',
+			'before_widget' => '<div class="col text-center logos__item">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<span class="d-none">',
 			'after_title'   => '</span>',

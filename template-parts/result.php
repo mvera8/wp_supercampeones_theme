@@ -14,6 +14,7 @@ if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
 		$query->the_post();
 		?>
+		<a href="<?php the_permalink(); ?>" class="color--white">
 			<p class="subtitle mb-0 light"><?php the_title() ?></p>
 			<div class="row no-gutters align-items-center">
 				<div class="col-4">
@@ -49,6 +50,7 @@ if ( $query->have_posts() ) {
 					<?php endif; ?>
 				</div>
 			</div>
+		</a>
 		<?php
 	}
 }

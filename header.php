@@ -25,7 +25,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light header-site__navbar">
 				<div class="container">
 					<?php if ( get_theme_mod( 'wp_supercampeones_theme_logo' ) ) : ?>
-						<a href="<?php echo home_url('/'); ?>" class="navbar-brand header-site__logo" rel="home" itemprop="url" style="<?php if ( get_theme_mod( 'wp_supercampeones_theme_logo_desktop_width' ) ) { echo 'width: ' . get_theme_mod( 'wp_supercampeones_theme_logo_desktop_width' ) . 'px'; } ?>">
+						<a href="<?php echo home_url('/'); ?>" class="navbar-brand header-site__logo bg--black-gradient" rel="home" itemprop="url" style="<?php if ( get_theme_mod( 'wp_supercampeones_theme_logo_desktop_width' ) ) { echo 'width: ' . get_theme_mod( 'wp_supercampeones_theme_logo_desktop_width' ) . 'px'; } ?>">
 							<img src="<?php echo get_theme_mod( 'wp_supercampeones_theme_logo' ); ?>" class="img--block" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="logo">
 						</a>        
 					<?php endif; ?>
@@ -47,6 +47,14 @@
 							)
 						);
 						?>
+						<span class="navbar-text">
+					      	<?php
+					      	$themeOption = get_option('my_theme_option');
+					      	if($themeOption['Facebook']) {
+					      		echo '<a href="' . $themeOption['Facebook'] . '" target="_blank">Facebook</a>';
+					      	}
+					      	?>
+					    </span>
 					</div>
 				</div>
 			</nav>

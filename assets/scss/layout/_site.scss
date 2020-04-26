@@ -1,5 +1,7 @@
 .site-block {
   &__block {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
     padding: 2rem 3rem;
     position: relative;
   }

@@ -28,8 +28,8 @@ function wp_supercampeones_theme_items() {
           'callback'=> 'text_callback'
           ),
         array(
-          'id'=> 'twitter',
-          'title'=>'Twitter',
+          'id'=> 'instagram',
+          'title'=>'Instagram',
           'callback'=> 'text_callback'
           ),
         array(

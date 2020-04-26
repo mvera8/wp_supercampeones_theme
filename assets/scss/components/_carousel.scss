@@ -1,0 +1,10 @@
+.carousel {
+  &-caption {
+    bottom: 25%;
+    text-align: left;
+
+    &--left {
+      text-align: right;
+    }
+  }
+}

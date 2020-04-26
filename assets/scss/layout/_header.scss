@@ -7,12 +7,13 @@
   }
 
   &__logo {
-    background-color: $black;
-    border: solid 2px $white;
     border-radius: 50%;
-    padding: 8px 6px;
+    padding: 5px;
 
     img {
+      border: solid 2px $white;
+      border-radius: 50%;
+      padding: 5px 5px 8px;
       position: relative;
       top: -1px;
     }
@@ -22,21 +23,14 @@
     li {
       a {
         color: $white !important;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 300;
         padding: 2.5rem 1.5rem !important;
-        position: relative;
-        transition: all 0.3s ease;
+        text-transform: uppercase;
 
         &:hover {
           color: $primary-color !important;
         }
-      }
-    }
-
-    .current_page_item {
-      a {
-        color: green !important;
       }
     }
   }

@@ -12,3 +12,11 @@ body {
   font-size: 1.6rem;
   color: $black;
 }
+
+a {
+  color: $primary-color;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
