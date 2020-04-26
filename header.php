@@ -48,12 +48,7 @@
 						);
 						?>
 						<span class="navbar-text">
-					      	<?php
-					      	$themeOption = get_option('my_theme_option');
-					      	if($themeOption['Facebook']) {
-					      		echo '<a href="' . $themeOption['Facebook'] . '" target="_blank">Facebook</a>';
-					      	}
-					      	?>
+					      	<?php get_template_part( 'template-parts/social' ); ?>>
 					    </span>
 					</div>
 				</div>

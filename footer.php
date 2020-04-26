@@ -11,26 +11,41 @@
 
 ?>
 
-	<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
+	<?php if ( is_active_sidebar( 'logos-1' ) ) { ?>
 		<section class="logos bg--blue py-5">
 			<div class="container">
 				<div class="row justify-content-center">
-					<?php dynamic_sidebar( 'footer-1' ); ?>
+					<?php dynamic_sidebar( 'logos-1' ); ?>
 				</div>
 			</div>
 		</section>
 	<?php } ?>
 
-	<footer class="site__footer bg--black">
-		aaaa
-		<?php
-		$themeOption = get_option('my_theme_option');
-		if($themeOption['Facebook']){
-			echo '<div><a href="'.$themeOption['Facebook'].'" target="_blank">Facebook</a></div>';
-		}
-		?>	
-		<div class="site-footer__copyright text-center">
-			<p><?php echo esc_html( '© ' . get_bloginfo( 'name' ) . ' ' . gmdate( 'Y' ) . '- Todos los derechos reservados.' ); ?></p>
+	<footer class="footer-site bg--black py-5">
+		<div class="container pb-5">
+			<div class="row">
+				<div class="col-8">
+					<div class="row">
+						<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
+							<?php dynamic_sidebar( 'footer-1' ); ?>
+						<?php } ?>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="footer-site__widget">
+						<h3 class="color--primary footer-site__title">Siguenos en</h3>
+						<?php get_template_part( 'template-parts/social' ); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-site__copyright  pt-5">
+			<div class="container text-right">
+				<a class="link" href="http://martinvera.com.uy/" target="_blank">
+					<div class="martinvera"></div>
+				</a>
+				<p><?php echo esc_html( '© ' . get_bloginfo( 'name' ) . ' ' . gmdate( 'Y' ) . ' - Todos los derechos reservados.' ); ?></p>
+			</div>
 		</div>
 		<?php do_action( 'before_footer_close_tag' ); ?>
 	</footer>
