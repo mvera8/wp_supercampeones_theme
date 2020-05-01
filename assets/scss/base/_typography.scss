@@ -48,6 +48,6 @@ p {
   }
 }
 
-.light {
-  font-weight: 300 !important;
+.latoLight {
+  @include latoLight();
 }
