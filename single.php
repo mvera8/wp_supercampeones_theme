@@ -10,17 +10,27 @@
 get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<header class="page-header bread-crumbs">
-			<?php breadcrumbs(); ?>
-		</header><!-- .page-header -->
-		<?php
-		while ( have_posts() ) :
-			the_post();
-			get_template_part( 'template-parts/page-content', get_post_format() );
-		endwhile;
-		?>
+		<div class="py-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-7">
+						<?php
+						the_title( '<h1 class="h2">', '</h1>' );
+
+						if ( has_post_thumbnail() ) {
+							the_post_thumbnail('', array('class' => 'img--block'));
+						}
+
+						while ( have_posts() ) :
+							the_post();
+							get_template_part( 'template-parts/page-content', get_post_format() );
+						endwhile;
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
 <?php
-get_sidebar();
 get_footer();

@@ -21,7 +21,7 @@ $blockFondo = get_field('players_fondo');
 			<div class="site-block__block height--percent">
 				<?php
 				if ( $blockSubtitle ) {
-					echo '<p class="subtitle mb-0 light">' . $blockSubtitle . '</h2>';
+					echo '<p class="subtitle mb-0 latoLight">' . $blockSubtitle . '</h2>';
 				}
 				if ( $blockTitle ) {
 					echo '<h2 class="h2">' . $blockTitle . '</h2>';
@@ -30,7 +30,7 @@ $blockFondo = get_field('players_fondo');
 					echo '<p>' . $blockTexto . '</p>';
 				}
 				if ( $blockLink ) {
-					echo '<a href="' . $blockLink . '" class="btn btn-primary">Ver más</a>';
+					echo '<a href="' . $blockLink . '" class="btn btn--border">Ver más</a>';
 				}
 				?>
 			</div>

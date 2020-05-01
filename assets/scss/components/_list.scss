@@ -1,0 +1,19 @@
+.list {
+  &__social {
+    li {
+      margin-right: 1rem;
+      padding-top: 1rem;
+
+      a {
+        background-color: red;
+        color: $white !important;
+        display: block;
+        font-size: 1.5rem;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        width: 3rem;
+      }
+    }
+  }
+}

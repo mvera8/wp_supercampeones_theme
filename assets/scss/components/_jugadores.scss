@@ -1,0 +1,14 @@
+.jugadores {
+  background-image: url(../images/sp-escudo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  min-height: 180px;
+
+  &__title {
+    border-bottom: solid 2px $primary-color;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+}
