@@ -1,0 +1,21 @@
+.blocks-gallery {
+  &-grid {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &-item {
+    border: solid 0.5rem white;
+    float: left;
+    width: 50%;
+
+    @at-root .columns-3 & {
+      width: 33.333%;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

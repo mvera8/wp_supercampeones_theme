@@ -1,18 +1,26 @@
 .list {
   &__social {
+    margin: 0;
+
     li {
       margin-right: 1rem;
-      padding-top: 1rem;
+      padding-top: 2rem;
 
       a {
-        background-color: red;
+        border: solid 1px $white;
+        border-radius: 50%;
         color: $white !important;
         display: block;
         font-size: 1.5rem;
-        height: 3rem;
+        height: 3.2rem;
         line-height: 3rem;
         text-align: center;
-        width: 3rem;
+        width: 3.2rem;
+
+        &:hover {
+          background-color: $white;
+          color: $black !important;
+        }
       }
     }
   }

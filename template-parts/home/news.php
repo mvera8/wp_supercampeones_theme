@@ -14,7 +14,7 @@ $args = array (
 $query = new WP_Query( $args );
 if ( $query->have_posts() ) {
 	?>
-	<section class="site-block news py-5">
+	<section class="site-block news py-5 bg--gray">
 		<div class="container">
 			<h2 class="h2 text-center">últimas novedades</h2>
 			<div class="row">
