@@ -17,7 +17,7 @@ get_template_part( 'template-parts/carousel' );
 			while ( have_posts() ) :
 				the_post();
 				echo '<div class="col-4"><div class="jugadores__widget">';
-					echo '<h4 class="latoLight jugadores__title">Resumen</h4>';
+					echo '<h4 class="latoLight jugadores__title mb-0">Resumen</h4>';
 					get_template_part( 'template-parts/page-content', get_post_format() );
 				echo '</div></div>';
 			endwhile;

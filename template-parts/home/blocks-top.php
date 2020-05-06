@@ -24,7 +24,7 @@ $blockFondo = get_field('players_fondo');
 					echo '<p class="subtitle mb-0 latoLight">' . $blockSubtitle . '</h2>';
 				}
 				if ( $blockTitle ) {
-					echo '<h2 class="h2">' . $blockTitle . '</h2>';
+					echo '<h2 class="h2 mb-3">' . $blockTitle . '</h2>';
 				}
 				if ( $blockTexto ) {
 					echo '<p>' . $blockTexto . '</p>';
