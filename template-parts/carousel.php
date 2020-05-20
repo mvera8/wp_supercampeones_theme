@@ -18,7 +18,11 @@ if( !empty( $image ) ): ?>
 				} else {
 					echo get_the_title();
 				}
-				echo '" /></div>';
+				echo '" />';
+				if ( is_singular( 'jugadores' ) ) {
+					echo '<div class="square carousel__square"></div>';
+				}
+				echo '</div>';
 			}
 			?>
 			<img class="img--block" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
