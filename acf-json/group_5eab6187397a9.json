@@ -135,10 +135,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5eab6217d34b0",
-            "label": "Copa",
-            "name": "copa",
-            "type": "image",
+            "key": "field_5ec46f84b93e2",
+            "label": "Copa de Plata 2010",
+            "name": "copa_de_plata_2010",
+            "type": "true_false",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -147,54 +147,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5eab6229d34b1",
-            "label": "Título Copa",
-            "name": "titulo_copa",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5eab623ed34b2",
-            "label": "Descripción Copa",
-            "name": "descripcion_copa",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -214,5 +171,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1588291620
+    "modified": 1589931925
 }

@@ -1,6 +1,6 @@
 {
     "key": "group_5ea44e9f9b82a",
-    "title": "Partido Post Type",
+    "title": "Partidos Post Type",
     "fields": [
         {
             "key": "field_5ea44eab5f517",
@@ -111,5 +111,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1588806098
+    "modified": 1589933043
 }

@@ -12,7 +12,7 @@
 ?>
 
 	<?php if ( is_active_sidebar( 'logos-1' ) ) { ?>
-		<section class="logos bg--blue py-5">
+		<section class="logos bg--blue site-block__padding">
 			<div class="container">
 				<div class="row justify-content-center">
 					<?php dynamic_sidebar( 'logos-1' ); ?>
@@ -21,8 +21,8 @@
 		</section>
 	<?php } ?>
 
-	<footer class="footer-site bg--black py-5">
-		<div class="container pb-5">
+	<footer class="footer-site bg--black">
+		<div class="container site-block__padding">
 			<div class="row">
 				<div class="col-8">
 					<div class="row">
@@ -39,7 +39,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-site__copyright  pt-5">
+		<div class="footer-site__copyright site-block__padding">
 			<div class="container text-right">
 				<a class="link" href="http://martinvera.com.uy/" target="_blank">
 					<div class="martinvera"></div>

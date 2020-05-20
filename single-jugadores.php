@@ -10,20 +10,50 @@
 get_header();
 get_template_part( 'template-parts/carousel' );
 ?>
-<div class="py-5">
+<div class="site-block__padding">
 	<div class="container">
 		<div class="jugadores row justify-content-between">
-			<?php
-			while ( have_posts() ) :
-				the_post();
-				echo '<div class="col-4"><div class="jugadores__widget">';
-					echo '<h4 class="latoLight jugadores__title mb-0">Resumen</h4>';
-					get_template_part( 'template-parts/page-content', get_post_format() );
-				echo '</div></div>';
-			endwhile;
-			?>
-
 			<div class="col-4">
+				<?php
+				while ( have_posts() ) :
+					the_post();
+					echo '<div class="jugadores__widget">';
+						echo '<h4 class="latoLight jugadores__title mb-0">Resumen</h4>';
+						get_template_part( 'template-parts/page-content', get_post_format() );
+					echo '</div>';
+				endwhile;
+				?>
+
+				<?php
+				$nombre = get_the_title();
+				$args = array (
+					'post_type'              => 'partidos',
+					'posts_per_page'         => -1,
+				);
+				$count = 0;
+				$query = new WP_Query( $args );
+				if ( $query->have_posts() ) {
+					while ( $query->have_posts() ) {
+						$query->the_post();
+						$posts = get_field('jugadores');
+						if( $posts ) {
+							foreach( $posts as $post):
+								setup_postdata($post);
+								if ( get_the_title() === $nombre ) {
+									$count++;
+								}
+							endforeach;
+						}
+					}
+					if ($count > 0) {
+						echo '<div class="jugadores__widget"><h4 class="latoLight jugadores__title">Estadísticas</h4><p>Partidos: ' . $count . '</p></div>';
+					}
+				}
+				wp_reset_postdata();
+				?>
+			</div>
+
+			<div class="col-12 col-sm-4">
 				<div class="jugadores__widget">
 					<h4 class="latoLight jugadores__title">Datos Personales</h4>
 					<?php
@@ -41,6 +71,23 @@ get_template_part( 'template-parts/carousel' );
 					    <p><b>Nacionalidad:</b><br /> <img src="<?php echo esc_url($image['url']); ?>" width="40px" alt="<?php echo esc_attr($image['alt']); ?>" /></p>
 					<?php endif; ?>
 				</div>
+
+				<?php if ( get_field( 'copa_de_plata_2010' ) ) { ?>
+					<div class="jugadores__widget">
+						<h4 class="latoLight jugadores__title">Palmares</h4>
+						<div class="jugadores__palmares">
+							<div class="row align-items-center">
+								<div class="col-12 col-sm-4">
+									<div class="jugadores__palmares__copa"></div>
+								</div>
+								<div class="col-12 col-sm-8">
+									<h4>Copa de Plata 2010</h4>
+									<p>Carlos El Trofeo <br />Boston River</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
