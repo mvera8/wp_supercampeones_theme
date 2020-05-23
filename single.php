@@ -10,7 +10,7 @@
 get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div class="py-5">
+		<div class="site-block__padding">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-7">
