@@ -10,7 +10,7 @@
 get_header(); ?>
 <div class="bg--black-gradient text-center py-4">
 	<div class="container">
-		<?php get_template_part( 'template-parts/result' ); ?>
+		<?php get_template_part( 'template-parts/result-content' ); ?>
 	</div>
 </div>
 <?php

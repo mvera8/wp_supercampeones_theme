@@ -30,11 +30,12 @@ get_template_part( 'template-parts/carousel' );
 					'post_type'              => 'partidos',
 					'posts_per_page'         => -1,
 				);
-				$count = 0;
+				$count = $partidos = 0;
 				$query = new WP_Query( $args );
 				if ( $query->have_posts() ) {
 					while ( $query->have_posts() ) {
 						$query->the_post();
+						$partidos++;
 						$posts = get_field('jugadores');
 						if( $posts ) {
 							foreach( $posts as $post):
@@ -46,11 +47,29 @@ get_template_part( 'template-parts/carousel' );
 						}
 					}
 					if ($count > 0) {
-						echo '<div class="jugadores__widget"><h4 class="latoLight jugadores__title">Estadísticas</h4><p>Partidos: ' . $count . '</p></div>';
+						$value = ($count/$partidos) * 100;
+						echo '<div class="jugadores__widget"><h4 class="latoLight jugadores__title">Estadísticas</h4>
+							<div class="progress mx-auto" data-value="' . $value . '">
+								<span class="progress-left">
+									<span class="progress-bar border-primary"></span>
+								</span>
+								<span class="progress-right">
+									<span class="progress-bar border-primary"></span>
+								</span>
+								<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+									' . $count . ' / ' . $partidos . '
+								</div>
+							</div>
+							<p class="text-center"><b>Partidos jugados</b></p>
+						</div>';
 					}
 				}
 				wp_reset_postdata();
 				?>
+
+
+				
+
 			</div>
 
 			<div class="col-12 col-sm-4">

@@ -14,20 +14,19 @@
 
 get_header(); ?>
 
-<div class="container">
-	<h1>Titulo</h1>
-</div>
-
-<div class="testimg"></div>
-
-<?php if ( have_posts() ) : ?>
-	<div class="hfeed">
-		<?php while ( have_posts() ) : the_post(); ?>
-			<article id="post-<?php the_ID() ?>" class="<?php post_class() ?>">
-				<?php the_content() ?>
-			</article>
-		<?php endwhile; ?>
+<section class="site-block news py-5 bg--gray">
+	<div class="container">
+		<h1 class="h1 text-center">Novedades</h1>
+		<div class="row">
+			<?php
+			if ( have_posts() ) :
+				while ( have_posts() ) : the_post();
+					get_template_part( 'template-parts/news-loop' );
+				endwhile;
+			endif;
+			?>
+		</div>
 	</div>
-<?php endif;
+</section>
 
-get_footer();
+<?php get_footer();
