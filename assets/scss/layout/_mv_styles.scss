@@ -18,6 +18,12 @@
     display: block;
   }
 
+  &--width {
+    img {
+      max-width: 100%;
+    }
+  }
+
   &--border-radius {
     border-radius: 1rem;
   }

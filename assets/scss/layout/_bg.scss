@@ -29,4 +29,17 @@
     color: $white !important;
     filter: progid:dximagetransform.microsoft.gradient(startColorstr='#000000', endColorstr='#2e2e2e', GradientType=1);
   }
+
+  &--blue-gradient {
+    background: rgb(0, 102, 172);
+    background: linear-gradient(3deg, rgba(0, 102, 172, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    color: $white !important;
+  }
+
+  &--ball {
+    background-image: url(../images/bg_pelota.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

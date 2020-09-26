@@ -26,7 +26,7 @@ if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
 		$query->the_post();
 		?>
-		<a href="<?php the_permalink(); ?>" class="color--white">
+		<a href="<?php the_permalink(); ?>" class="text-white">
 			<?php get_template_part( 'template-parts/result-content' ); ?>
 		</a>
 		<?php

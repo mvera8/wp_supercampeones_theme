@@ -1,0 +1,32 @@
+.individual {
+  &__image {
+    background-color: $primary-color;
+    background-position: top 2rem center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__title {
+    bottom: 2rem;
+    color: $shine-blue-color;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 5;
+  }
+
+  &__gradient {
+    background: -webkit-linear-gradient(#999, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: 0;
+    left: -12%;
+    position: absolute;
+    text-align: center;
+    width: 124%;
+    z-index: 1;
+  }
+}
