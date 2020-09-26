@@ -35,7 +35,7 @@ $blockFondo = get_field('carlos_fondo');
 		</div>
 		<div class="col-4 d-flex flex-column">
 			<div class="site-block__block bg--black height--percent" style="background-image: url(<?php echo get_field('camiseta_fondo'); ?>);">
-				<a href="<?php echo home_url('/camiseta/'); ?>" class="color--white">
+				<a href="<?php echo home_url('/camiseta/'); ?>" class="text-white">
 					<?php
 					if ( get_field('camiseta_subtitulo') ) {
 						echo '<p class="subtitle mb-0 light">' . get_field('camiseta_subtitulo') . '</h2>';

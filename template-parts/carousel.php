@@ -5,14 +5,16 @@
  * @package WP_Supercampeones_Theme
  */
 $titulo = get_field('titulo_principal');
+$titulo_secundario = get_field('titulo_secundario');
+$imagen_secundaria = get_field('imagen_secundaria');
 $image = get_field('imagen');
 if( !empty( $image ) ): ?>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 	<div class="carousel-inner">
 		<div class="carousel-item active">
 			<?php
-			if ( get_field( 'imagen_secundaria' ) ) {
-				echo '<div class="carousel__secundaria"><img src="' . get_field( 'imagen_secundaria' ) . '" alt="';
+			if ( $imagen_secundaria ) {
+				echo '<div class="carousel__secundaria"><img src="' . $imagen_secundaria . '" alt="';
 				if ( $titulo ) {
 					echo strip_tags($titulo);
 				} else {
@@ -34,8 +36,8 @@ if( !empty( $image ) ): ?>
 				if ( $titulo ) {
 					echo '<h1>' . $titulo . '</h1>';
 				}
-				if (get_field( 'titulo_secundario' ) ) {
-					echo '<h3 class="latoLight">' . get_field( 'titulo_secundario' ) . '</h3>';
+				if ( $titulo_secundario ) {
+					echo '<h3 class="latoLight">' . $titulo_secundario . '</h3>';
 				}
 				?>
 			</div>
