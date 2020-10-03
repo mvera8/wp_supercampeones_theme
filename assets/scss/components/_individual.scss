@@ -1,4 +1,6 @@
 .individual {
+  margin: 3rem 0;
+
   &__image {
     background-color: $primary-color;
     background-position: top 2rem center;
@@ -8,25 +10,48 @@
     overflow: hidden;
   }
 
-  &__title {
-    bottom: 2rem;
-    color: $shine-blue-color;
-    left: 0;
+  &__text {
     position: absolute;
-    text-align: center;
-    width: 100%;
-    z-index: 5;
-  }
-
-  &__gradient {
-    background: -webkit-linear-gradient(#999, transparent);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     bottom: 0;
     left: -12%;
-    position: absolute;
     text-align: center;
+    transition: all 0.3s ease;
     width: 124%;
-    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+      left: 0;
+      width: 100%;
+    }
+
+    &__title {
+      @include latoLight();
+
+      color: $shine-blue-color;
+      font-size: 3rem;
+      margin-bottom: -6rem;
+      transition: all 0.3s ease;
+    }
+
+    &__gradient {
+      background: -webkit-linear-gradient(#999, transparent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 5rem;
+      opacity: 0.8;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &:hover {
+    .individual__text {
+      bottom: 20%;
+
+      &__title {
+        margin-bottom: -3rem;
+      }
+    }
   }
 }
