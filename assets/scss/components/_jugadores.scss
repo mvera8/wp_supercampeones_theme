@@ -1,9 +1,12 @@
 .jugadores {
-  background-image: url(../images/sp-escudo.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 15%;
   min-height: 180px;
+
+  @include media-breakpoint-up(md) {
+    background-image: url(../images/sp-escudo.svg);
+  }
 
   &__title {
     border-bottom: solid 2px $primary-color;
@@ -28,6 +31,7 @@
       background-size: contain;
       display: block;
       margin: 0 auto;
+      margin-bottom: 2rem;
       height: 10rem;
       width: 8rem;
     }

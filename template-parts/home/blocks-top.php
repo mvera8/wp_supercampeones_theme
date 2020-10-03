@@ -12,12 +12,12 @@ $blockFondo = get_field('players_fondo');
 ?>
 <section class="site-block">
 	<div class="row no-gutters">
-		<div class="col-4 d-flex flex-column">
+		<div class="col-12 col-lg-4 d-flex flex-column">
 			<div class="site-block__block bg--black-gradient text-center height--percent">
 				<?php get_template_part( 'template-parts/result' ); ?>
 			</div>
 		</div>
-		<div class="col-4 d-flex flex-column">
+		<div class="col-12 col-md-6 d-flex flex-column">
 			<div class="site-block__block height--percent">
 				<?php
 				if ( $blockSubtitle ) {
@@ -35,7 +35,7 @@ $blockFondo = get_field('players_fondo');
 				?>
 			</div>
 		</div>
-		<div class="col-4 d-flex flex-column flex-grow-1">
+		<div class="col-12 col-md-6 d-flex flex-column flex-grow-1">
 			<div class="site-block__block height--percent img--background" style="background-image: url(<?php echo $blockFondo; ?>);"></div>
 		</div>
 	</div>

@@ -18,6 +18,16 @@ h1 {
   line-height: 1;
   margin-bottom: 3rem;
   text-transform: uppercase;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .h2,
@@ -25,6 +35,10 @@ h2 {
   font-size: 3.2rem;
   margin-bottom: 3rem;
   text-transform: uppercase;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 2rem;
+  }
 
   span {
     color: $primary-color;

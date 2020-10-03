@@ -14,7 +14,7 @@
 	<?php if ( is_active_sidebar( 'logos-1' ) ) { ?>
 		<section class="logos bg--blue site-block__padding">
 			<div class="container">
-				<div class="row justify-content-center">
+				<div class="row justify-content-center align-items-center">
 					<?php dynamic_sidebar( 'logos-1' ); ?>
 				</div>
 			</div>
@@ -22,16 +22,16 @@
 	<?php } ?>
 
 	<footer class="footer-site bg--black">
-		<div class="container site-block__padding">
+		<div class="container py-5">
 			<div class="row">
-				<div class="col-8">
+				<div class="col-12 col-sm-8">
 					<div class="row">
 						<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
 							<?php dynamic_sidebar( 'footer-1' ); ?>
 						<?php } ?>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-sm-4">
 					<div class="footer-site__widget">
 						<h3 class="color--primary footer-site__title">Siguenos en</h3>
 						<?php get_template_part( 'template-parts/social' ); ?>

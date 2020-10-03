@@ -27,8 +27,8 @@ if( !empty( $image ) ): ?>
 				echo '</div>';
 			}
 			?>
-			<img class="img--block" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-			<div class="carousel-caption d-none d-md-block">
+			<img class="img--block carousel__bg" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+			<div class="carousel-caption">
 				<?php
 				if ( !get_field( 'ocultar_etiquta' ) ) {
 					echo '<h5><span class="badge bg--important">' . get_the_title() . '</span></h5>';

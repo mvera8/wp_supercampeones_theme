@@ -13,7 +13,7 @@ get_template_part( 'template-parts/carousel' );
 <div class="site-block__padding">
 	<div class="container">
 		<div class="jugadores row justify-content-between">
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<?php
 				while ( have_posts() ) :
 					the_post();
@@ -66,13 +66,9 @@ get_template_part( 'template-parts/carousel' );
 				}
 				wp_reset_postdata();
 				?>
-
-
-				
-
 			</div>
 
-			<div class="col-12 col-sm-4">
+			<div class="col-12 col-md-4">
 				<div class="jugadores__widget">
 					<h4 class="latoLight jugadores__title">Datos Personales</h4>
 					<?php

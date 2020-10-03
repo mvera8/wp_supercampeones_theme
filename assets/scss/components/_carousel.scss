@@ -1,10 +1,22 @@
 .carousel {
+  background-color: $primary-color;
+
   &-caption {
     bottom: 25%;
     text-align: left;
 
+    @include media-breakpoint-down(lg) {
+      bottom: 0;
+    }
+
     &--left {
       text-align: right;
+    }
+  }
+
+  &__bg {
+    @include media-breakpoint-down(md) {
+      display: none;
     }
   }
 
@@ -15,11 +27,22 @@
     right: 20%;
     z-index: 2;
 
+    @include media-breakpoint-down(md) {
+      position: relative;
+      right: 0;
+      text-align: center;
+    }
+
     img {
       height: 100%;
       position: relative;
       width: auto;
       z-index: 2;
+
+      @include media-breakpoint-down(md) {
+        height: auto;
+        width: 50%;
+      }
     }
   }
 
@@ -32,5 +55,9 @@
     top: 10%;
     width: 260px;
     z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 }
