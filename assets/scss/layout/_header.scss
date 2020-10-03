@@ -2,6 +2,10 @@
   background-color: $black;
   padding: 1rem 0;
 
+  @include media-breakpoint-down(md) {
+    padding: 1rem;
+  }
+
   &__navbar {
     padding: 0;
   }
@@ -26,10 +30,24 @@
         padding: 2.5rem 1.5rem !important;
         text-transform: uppercase;
 
+        @include media-breakpoint-down(lg) {
+          padding: 0.5rem 1rem !important;
+        }
+
         &:hover {
           color: $primary-color !important;
         }
       }
     }
+  }
+}
+
+.navbar-light {
+  .navbar-toggler {
+    border-color: $white;
+  }
+
+  .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
   }
 }

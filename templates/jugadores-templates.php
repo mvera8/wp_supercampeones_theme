@@ -15,7 +15,6 @@ get_template_part( 'template-parts/carousel' );
 		<main id="post-<?php the_ID() ?>" class="<?php post_class() ?>">
 			<div class="py-5">
 				<div class="container">
-
 					<?php 
 					$args = array (
 						'post_type'              => 'jugadores',

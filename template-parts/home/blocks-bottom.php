@@ -12,10 +12,10 @@ $blockFondo = get_field('carlos_fondo');
 ?>
 <section class="site-block">
 	<div class="row no-gutters">
-		<div class="col-4 d-flex flex-column flex-grow-1">
+		<div class="col-12 col-md-6 col-lg-4 d-flex flex-column flex-grow-1">
 			<div class="site-block__block height--percent img--background" style="background-image: url(<?php echo $blockFondo; ?>);"></div>
 		</div>
-		<div class="col-4 d-flex flex-column">
+		<div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
 			<div class="site-block__block height--percent">
 				<?php
 				if ( $blockSubtitle ) {
@@ -33,7 +33,7 @@ $blockFondo = get_field('carlos_fondo');
 				?>
 			</div>
 		</div>
-		<div class="col-4 d-flex flex-column">
+		<div class="col-12 col-lg-4 d-flex flex-column">
 			<div class="site-block__block bg--black height--percent" style="background-image: url(<?php echo get_field('camiseta_fondo'); ?>);">
 				<a href="<?php echo home_url('/camiseta/'); ?>" class="text-white">
 					<?php
