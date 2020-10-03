@@ -1,11 +1,11 @@
 {
-    "key": "group_5ea44c1c31686",
-    "title": "Carousel",
+    "key": "group_5f78cc60895d4",
+    "title": "Camiseta Página",
     "fields": [
         {
-            "key": "field_5ea44c1feffbb",
-            "label": "Imagen Fondo",
-            "name": "imagen",
+            "key": "field_5f78cc66d1892",
+            "label": "Camiseta",
+            "name": "camiseta",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "preview_size": "medium",
             "library": "all",
             "min_width": "",
@@ -27,10 +27,10 @@
             "mime_types": ""
         },
         {
-            "key": "field_5eab544150a1e",
-            "label": "Ocultar etiquta",
-            "name": "ocultar_etiquta",
-            "type": "true_false",
+            "key": "field_5f78cc73d1893",
+            "label": "Equipo",
+            "name": "equipo",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -39,17 +39,22 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
-            "key": "field_5eab53a5b72b0",
-            "label": "Titulo Principal",
-            "name": "titulo_principal",
-            "type": "text",
+            "key": "field_5f78d47af7595",
+            "label": "Equipo chica",
+            "name": "equipo_chica",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -58,35 +63,21 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
-            "key": "field_5eab59fc43752",
-            "label": "Titulo Secundario o Posición",
-            "name": "titulo_secundario",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5eab5377b72af",
-            "label": "Imagen secundaria",
-            "name": "imagen_secundaria",
+            "key": "field_5f78cf800492a",
+            "label": "Golero",
+            "name": "golero",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -111,16 +102,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "page"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "jugadores"
+                "value": "templates\/camiseta-templates.php"
             }
         ]
     ],
@@ -132,5 +116,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1601747502
+    "modified": 1601754248
 }

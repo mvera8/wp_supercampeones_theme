@@ -48,11 +48,19 @@ h2 {
 .h3,
 h3 {
   font-size: 2.1rem;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 1.8rem;
+  }
 }
 
 .h4,
 h4 {
   font-size: 1.8rem;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -65,4 +73,9 @@ p {
 
 .latoLight {
   @include latoLight();
+}
+
+b,
+strong {
+  font-weight: 600;
 }
