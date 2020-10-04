@@ -10,7 +10,7 @@ $blockTexto = get_field('carlos_texto');
 $blockLink = get_field('carlos_link');
 $blockFondo = get_field('carlos_fondo');
 ?>
-<section class="site-block">
+<section id="site-block-bottom" class="site-block">
 	<div class="row no-gutters">
 		<div class="col-12 col-md-6 col-lg-4 d-flex flex-column flex-grow-1">
 			<div class="site-block__block height--percent img--background" style="background-image: url(<?php echo $blockFondo; ?>);"></div>

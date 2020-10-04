@@ -13,7 +13,7 @@ get_header(); ?>
 		<div class="site-block__padding">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-7">
+					<div class="col-12 col-md-7">
 						<?php
 						the_title( '<h1 class="h2">', '</h1>' );
 
