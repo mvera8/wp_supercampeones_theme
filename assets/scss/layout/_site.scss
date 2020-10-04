@@ -1,12 +1,15 @@
 .site-block {
   &__block {
+    background-position: left;
     background-repeat: no-repeat;
     background-size: auto 100%;
     padding: 2rem 3rem;
     position: relative;
 
-    @include media-breakpoint-down(lg) {
-      background-position: right;
+    @at-root #site-block-bottom & {
+      @include media-breakpoint-down(lg) {
+        background-position: right;
+      }
     }
   }
 

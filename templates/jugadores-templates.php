@@ -30,7 +30,7 @@ get_template_part( 'template-parts/carousel' );
 								$query->the_post();
 								$imagen_secundaria = get_field('imagen_secundaria');
 								?>
-								<div class="col-12 col-md-6 col-lg-4">
+								<div class="col-12 col-md-6 col-lg-3">
 									<a href="<?php the_permalink(); ?>">
 										<div class="individual relative">
 											<div class="individual__image square" style="background-image: url(<?php echo $imagen_secundaria; ?>);"></div>

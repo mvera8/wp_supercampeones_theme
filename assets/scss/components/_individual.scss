@@ -27,8 +27,7 @@
       @include latoLight();
 
       color: $shine-blue-color;
-      font-size: 3rem;
-      margin-bottom: -6rem;
+      margin-bottom: -4rem;
       transition: all 0.3s ease;
     }
 
@@ -36,12 +35,7 @@
       background: -webkit-linear-gradient(#999, transparent);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 5rem;
-      opacity: 0.8;
-
-      @include media-breakpoint-down(sm) {
-        font-size: 4rem;
-      }
+      opacity: 0.9;
     }
   }
 
@@ -50,7 +44,7 @@
       bottom: 20%;
 
       &__title {
-        margin-bottom: -3rem;
+        margin-bottom: -4rem;
       }
     }
   }
